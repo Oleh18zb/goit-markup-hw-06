@@ -728,7 +728,7 @@ address {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-input::placeholder {
+.footer-input::  {
     font-weight: 400;
         font-size: 12px;
         line-height: 2;
@@ -786,17 +786,21 @@ address {
 
 .modal {
     position: absolute;
-    width: 408px;
-    min-height: 584px;
+    /* width: 408px;
+    min-height: 584px; */
+    width: 288px;
+    height: 623px;
     background-color: #fcfcfc;
     border-radius: 4px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 72px;
-    padding-right: 24px;
+    /* padding-right: 24px; */
+    padding-right: 16px;
     padding-bottom: 24px;
-    padding-left: 24px;
+    /* padding-left: 24px; */
+    padding-left: 16px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -843,7 +847,6 @@ address {
 }
 
 .modal-form {
-    margin-bottom: 8px;
 }
 
 .container-modal-form {
@@ -919,6 +922,10 @@ address {
     color: #4D5AE5;
 }
 
+.modal-comment::placeholder {
+    color: #8e8f99;
+}
+
 .modal-input-checkbox {
     margin-bottom: 24px;
 }
@@ -979,12 +986,13 @@ address {
     text-align: center;
     color: #ffffff;
     cursor: pointer;
-    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 95px;
-    margin-right: 96px;
+    /* margin-left: 95px;
+    margin-right: 96px; */
+    margin-left: 44px;
     margin-top: 24px;
 }
 
@@ -994,7 +1002,8 @@ address {
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4d5ae5;
-        padding-left: 5px;
+        /* padding-left: 5px; */
+        padding-left: 25px;
 }
 
                                 /* MEDIA */
@@ -1094,6 +1103,19 @@ address {
     }
     .footer-input {
         width: 264px;
+    }
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    .modal-btn-send {
+        margin-left: 95px;
+        margin-right: 96px;
+    }
+    .span-span {
+        padding-left: 5px;
     }
 }
 
