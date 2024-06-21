@@ -72,11 +72,11 @@ button {
 .nav-link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #2e2f42;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
     margin-right: 76px;
     text-transform: uppercase;
 }
@@ -91,7 +91,7 @@ button {
 
 .list-item {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.02em;
     line-height: calc(16 / 14);
     position: relative;
@@ -109,7 +109,7 @@ button {
 }
 
 .list-link {
-    color: #2E2F42;
+    color: #434455;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -139,12 +139,12 @@ address {
 
 .contact-link {
     font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 0.02em;
-        color: #757575;
-        line-height: calc(16 / 14);
-        transition: color 250ms linear;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    line-height: calc(16 / 14);
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover, .contact-link:focus {
     color: #2196f3;
@@ -387,7 +387,6 @@ address {
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        /* text-transform: uppercase; */
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
@@ -1016,11 +1015,19 @@ address {
         width:  584px;
     }
     .header {
+        padding: 0;
         display: flex;
         justify-content: space-between;
     }
     .list {
         display: flex;
+    }
+    .list-item .current::after {
+        bottom: -1px;
+    }
+    .list-link {
+        display: block;
+        padding: 24px 0;
     }
     .contacts-list {
         display: flex;
@@ -1063,6 +1070,9 @@ address {
     }
     .features-item {
         width: calc((100% - 24px) / 2);
+    }
+    .features-title {
+        text-align: left;
     }
     .team-list {
         gap: 64px 24px;
@@ -1177,7 +1187,7 @@ address {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         text-align: start;
         }
     .features-text {
